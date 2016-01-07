@@ -22,7 +22,8 @@ var pics = function(){
         imgDiv.style.backgroundImage = 'url('+this.dataset.bigImage+')';
 
 
-        lightbox.appendChild(closeButton).appendChild(imgDiv);
+        lightbox.appendChild(closeButton);
+        lightbox.appendChild(imgDiv);
         document.getElementsByTagName('body')[0].appendChild(lightbox);
         document.querySelector('#pics-lightbox-close').focus();
     };
